@@ -1,3 +1,5 @@
+use templates_rust::greet;
+
 fn main() {
-    println!("Hello from Tesseracs (Rust template)");
+    println!("{}", greet("Tesseracs"));
 }
