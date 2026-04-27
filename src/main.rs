@@ -1,5 +1,6 @@
-use templates_rust::greet;
+use templates_rust::{report::render_summary, sample_project};
 
 fn main() {
-    println!("{}", greet("Tesseracs"));
+    let project = sample_project();
+    println!("{}", render_summary(&project));
 }
